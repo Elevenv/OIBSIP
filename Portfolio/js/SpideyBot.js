@@ -4,7 +4,7 @@ function SendMsg(){
     var Subject = document.getElementById('subject').value
     var Message = document.getElementById('message').value
     const req = new XMLHttpRequest()
-    req.open('POST','https://discord.com/api/webhooks/898214046669627422/Uov1DyNbewKV8PSQEYyxpbHQqDmZs0ArlIK2bbna5xt5HHlgN5xMUt3jefJ8V1ALRoIW')
+    req.open('POST','Discord Webhook URL')
     req.setRequestHeader('Content-type','application/json')
     const params={
         username :'Spidey Bot',
