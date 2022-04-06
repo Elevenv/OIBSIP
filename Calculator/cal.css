@@ -1,0 +1,39 @@
+html {  
+    height: 100vh;  
+    display: grid;  
+    align-items: center;  
+    justify-content: center;  
+    background-image:url('cal.png');  
+    font-family: 'Cookie', cursive;  
+}  
+
+input[type=text]{
+    width:280px;
+    height: 70px;
+    padding: 0;
+    color:brown;
+    background-color: none;
+    text-align: right;
+    font-size:30px;
+}
+
+input[type=button]{
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: aqua;
+    padding: 10px;
+}
+
+h2{
+    text-align: center;
+    color:white;
+
+}

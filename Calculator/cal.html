@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="cal.js"></script>
+    <link rel="stylesheet" href="cal.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <h2>Calculator</h2>
+    <div class="grid-container">
+        <form name="Calculator" id="Calculator" class="calculator">
+        
+            <input class type="text" name="Input" id="Input">
+            <div class="grid-container">
+                
+                <input type="button" name='one' value="1" onclick="Input1(1,Calculator.Input.value)">
+                <input type="button" name='two' value="2" onclick='Input1(2,Calculator.Input.value)'>
+                <input type="button" name='three' value="3" onclick='Input1(3,Calculator.Input.value)'>
+                <input type="button" name='add' value="+" onclick='Input1("+",Calculator.Input.value)'>
+                <input type="button" name='four' value="4" onclick='Input1(4,Calculator.Input.value)'>
+                <input type="button" name='five' value="5" onclick='Input1(5,Calculator.Input.value)'>
+                <input type="button" name='six' value="6" onclick='Input1(6,Calculator.Input.value)'>
+                <input type="button" name='minus' value="-" onclick='Input1("-",Calculator.Input.value)'>
+                <input type="button" name='seven' value="7" onclick='Input1(7,Calculator.Input.value)'>
+                <input type="button" name='eight' value="8" onclick='Input1(8,Calculator.Input.value)'>
+                <input type="button" name='nine' value="9" onclick='Input1(9,Calculator.Input.value)'>
+                <input type="button" name='multiply' value="*" onclick='Input1("*",Calculator.Input.value)'>
+                <input type="button" name='zero' value="0" onclick='Input1(0,Calculator.Input.value)'>
+                <input type="button" name='clear' value="C" onclick="Calculator.Input.value=''">
+                <input type="button" name="equal" value="=" onclick="calculate(Calculator.Input.value)">
+                <input type="button" name='divide' value="/" onclick='Input1("/",Calculator.Input.value)'>
+                <input type="button" name='delete' value="del" onclick='Calculator.Input.value=Calculator.Input.value.substr(0,Calculator.Input.value.length-1)'>
+
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
